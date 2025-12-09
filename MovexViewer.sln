@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.35806.103
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovexViewer", "MovexViewer\MovexViewer.csproj", "{E566671C-5D60-4B86-ADD6-17C6558F181D}"
 EndProject
@@ -13,11 +13,11 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E566671C-5D60-4B86-ADD6-17C6558F181D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E566671C-5D60-4B86-ADD6-17C6558F181D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E566671C-5D60-4B86-ADD6-17C6558F181D}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{E566671C-5D60-4B86-ADD6-17C6558F181D}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{E566671C-5D60-4B86-ADD6-17C6558F181D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E566671C-5D60-4B86-ADD6-17C6558F181D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C582AC6B-FA35-447A-C052-C86B9ACE45C3}.Debug|Any CPU.ActiveCfg = Debug
+		{C582AC6B-FA35-447A-C052-C86B9ACE45C3}.Debug|Any CPU.ActiveCfg = Release
 		{C582AC6B-FA35-447A-C052-C86B9ACE45C3}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution

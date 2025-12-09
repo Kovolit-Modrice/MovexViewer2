@@ -171,7 +171,7 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E16B4F44EF72485EA6EF9FEDEC76EA74"
             {
-            "SourcePath" = "8:..\\..\\..\\Pictures\\favicon_io (1)\\favicon.ico"
+            "SourcePath" = "8:C:\\Pictures\\favicon_io (1)\\favicon.ico"
             "TargetName" = "8:favicon.ico"
             "Tag" = "8:"
             "Folder" = "8:_1EB17B7BD6F84B9F92C3AEBEDD7A4402"
@@ -393,7 +393,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F47798CDEA7841DCA589E3ABC4329223"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Progress"
+                    "DisplayName" = "8:Průběh"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
@@ -449,7 +449,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_12C86D1C838F4060BAB894A223EE4A82"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Finished"
+                    "DisplayName" = "8:Dokončeno"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
@@ -480,7 +480,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_97B452B51461423183E0827046CC9809"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Progress"
+                    "DisplayName" = "8:Průběh"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
@@ -524,7 +524,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_456A3F31A6A94C6D88E88562B4F1DE00"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Welcome"
+                    "DisplayName" = "8:Vítejte"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
@@ -572,7 +572,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_BE0369A816A34E2F9DAFB7AC00698370"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirm Installation"
+                    "DisplayName" = "8:Potvrzení instalace"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
@@ -594,7 +594,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_FE77538CB86140B1987D57C6EEB5E6B0"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Installation Folder"
+                    "DisplayName" = "8:Instalační složka"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
@@ -638,7 +638,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_0545CD5127D64621AF595B28F9190D53"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Finished"
+                    "DisplayName" = "8:Dokončeno"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
@@ -682,7 +682,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_249BC520365E4E599CCE6CDDB8659BF9"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Installation Folder"
+                    "DisplayName" = "8:Instalační složka"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
@@ -704,7 +704,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_4F441BDC90B043C9A740565D07CD08E3"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirm Installation"
+                    "DisplayName" = "8:Potvrzení instalace"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
@@ -726,7 +726,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_CA6C02EA6F724690B6B9036E0086F15E"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Welcome"
+                    "DisplayName" = "8:Vítejte"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"
