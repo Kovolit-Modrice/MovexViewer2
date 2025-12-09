@@ -21,13 +21,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A85AA1C86EA947028BD687CEE0619058"
+        "MsmKey" = "8:_83811C4D1C7349E8826D05141C1A1ADA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E16B4F44EF72485EA6EF9FEDEC76EA74"
+        "MsmKey" = "8:_A85AA1C86EA947028BD687CEE0619058"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -169,10 +169,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E16B4F44EF72485EA6EF9FEDEC76EA74"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_83811C4D1C7349E8826D05141C1A1ADA"
             {
-            "SourcePath" = "8:C:\\Pictures\\favicon_io (1)\\favicon.ico"
-            "TargetName" = "8:favicon.ico"
+            "SourcePath" = "8:..\\MovexViewer\\Properties\\KovolitIcon.ico"
+            "TargetName" = "8:KovolitIcon.ico"
             "Tag" = "8:"
             "Folder" = "8:_1EB17B7BD6F84B9F92C3AEBEDD7A4402"
             "Condition" = "8:"
@@ -210,7 +210,7 @@
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
-            "AlwaysCreate" = "11:FALSE"
+            "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:TARGETDIR"
@@ -377,7 +377,7 @@
             "Target" = "8:_A85AA1C86EA947028BD687CEE0619058"
             "Folder" = "8:_A9868345EBD44D60BF0F843F136BD787"
             "WorkingFolder" = "8:_1EB17B7BD6F84B9F92C3AEBEDD7A4402"
-            "Icon" = "8:_E16B4F44EF72485EA6EF9FEDEC76EA74"
+            "Icon" = "8:"
             "Feature" = "8:"
             }
         }
