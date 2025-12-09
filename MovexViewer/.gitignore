@@ -1,0 +1,25 @@
+# Build výsledky
+bin/
+obj/
+
+# Užívate¾ské nastavenia
+*.user
+*.suo
+
+# Visual Studio
+.vs/
+
+# Installer setup
+*.msi
+*.vdproj.*
+
+# PFX súkromné k¾úèe
+*.pfx
+
+# Záložné alebo doèasné súbory
+*.log
+*.tmp
+*.bak
+
+# Lokálne nastavenia pre deployment
+*.Publish.xml
