@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\GitHub\\MovexViewer2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E566671C-5D60-4B86-ADD6-17C6558F181D}|MovexViewer\\MovexViewer.csproj|c:\\github\\movexviewer2\\movexviewer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E566671C-5D60-4B86-ADD6-17C6558F181D}|MovexViewer\\MovexViewer.csproj|solutionrelative:movexviewer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E566671C-5D60-4B86-ADD6-17C6558F181D}|MovexViewer\\MovexViewer.csproj|c:\\github\\movexviewer2\\movexviewer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E566671C-5D60-4B86-ADD6-17C6558F181D}|MovexViewer\\MovexViewer.csproj|solutionrelative:movexviewer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E566671C-5D60-4B86-ADD6-17C6558F181D}|MovexViewer\\MovexViewer.csproj|c:\\github\\movexviewer2\\movexviewer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E566671C-5D60-4B86-ADD6-17C6558F181D}|MovexViewer\\MovexViewer.csproj|solutionrelative:movexviewer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +26,29 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\GitHub\\MovexViewer2\\MovexViewer\\Program.cs",
+              "RelativeDocumentMoniker": "MovexViewer\\Program.cs",
+              "ToolTip": "C:\\GitHub\\MovexViewer2\\MovexViewer\\Program.cs",
+              "RelativeToolTip": "MovexViewer\\Program.cs",
+              "ViewState": "AgIAABEBAAAAAAAAAAAiwDgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T23:13:08.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [N\u00E1vrh]",
+              "Title": "Form1.cs",
               "DocumentMoniker": "C:\\GitHub\\MovexViewer2\\MovexViewer\\Form1.cs",
               "RelativeDocumentMoniker": "MovexViewer\\Form1.cs",
-              "ToolTip": "C:\\GitHub\\MovexViewer2\\MovexViewer\\Form1.cs [N\u00E1vrh]",
-              "RelativeToolTip": "MovexViewer\\Form1.cs [N\u00E1vrh]",
+              "ToolTip": "C:\\GitHub\\MovexViewer2\\MovexViewer\\Form1.cs",
+              "RelativeToolTip": "MovexViewer\\Form1.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAiwJcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:47:04.48Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2025-12-09T22:52:30.177Z",
+              "EditorCaption": ""
             }
           ]
         }

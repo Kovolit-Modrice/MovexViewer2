@@ -2,7 +2,6 @@
 using System.Diagnostics;
 using System.DirectoryServices.AccountManagement;
 using System.Linq;
-using System.Net;
 using System.Net.Mail;
 using System.Security.Principal;
 using System.Windows.Forms;
@@ -11,8 +10,6 @@ namespace MovexViewer
 {
     public partial class Form1 : Form
     {
-        private WebBrowser webBrowser1;
-
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +20,7 @@ namespace MovexViewer
         {
             try
             {
+                // Povolení admin tlačítka jen pro skupinu G_Admins
                 button2.Enabled = IsUserInGroup("G_Admins");
             }
             catch (Exception ex)
@@ -31,6 +29,9 @@ namespace MovexViewer
                                 "Chyba prístupu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 button2.Enabled = false;
             }
+
+            // Po štarte automaticky otvorí MOVEX Workplace v IE
+            OtevritMovexWorkplace();
         }
 
         private bool IsUserInGroup(string groupName)
@@ -55,20 +56,10 @@ namespace MovexViewer
             ReportError();
         }
 
-        private void InitializeWebBrowser()
-        {
-            webBrowser1 = new WebBrowser
-            {
-                Dock = DockStyle.Fill,
-                ScriptErrorsSuppressed = true
-            };
-
-            this.Controls.Add(webBrowser1);
-        }
-
         private void ReportError()
         {
             string userEmail = "";
+
             try
             {
                 string username = WindowsIdentity.GetCurrent().Name.Split('\\')[1];
@@ -88,9 +79,9 @@ namespace MovexViewer
             try
             {
                 MailMessage mail = new MailMessage();
-                mail.From = new MailAddress(userEmail);             // Odosielateľ = prihlásený používateľ
-                mail.To.Add("helpdesk@kovolit.cz");                 // Helpdesk
-                mail.To.Add(userEmail);                             // Užívatel ako príjemca
+                mail.From = new MailAddress(userEmail);    // Odosielateľ = prihlásený používateľ
+                mail.To.Add("helpdesk@kovolit.cz");        // Helpdesk
+                mail.To.Add(userEmail);                    // Kopia používateľovi
 
                 mail.Subject = "MOVEX chyba od uživatele";
                 mail.Body = $"Nahlásená chyba od: {dialog.UserEmail}\n\nText chyby:\n{dialog.ReportText}";
@@ -100,12 +91,14 @@ namespace MovexViewer
 
                 smtp.Send(mail);
 
-                MessageBox.Show($"Chyba bola odoslaná.\n\nOd: {dialog.UserEmail}\nNa: helpdesk@kovolit.cz, {userEmail}\n\nText:\n{dialog.ReportText}",
-                                "Odoslané", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(
+                    $"Chyba bola odoslaná.\n\nOd: {dialog.UserEmail}\nNa: helpdesk@kovolit.cz, {userEmail}\n\nText:\n{dialog.ReportText}",
+                    "Odoslané", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Nepodarilo sa odoslať chybu: " + ex.Message, "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Nepodarilo sa odoslať chybu: " + ex.Message,
+                                "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -118,18 +111,41 @@ namespace MovexViewer
             }
         }
 
+        // ==========================================
+        //  Spúšťanie MOVEX cez klasický Internet Explorer
+        // ==========================================
+
+        private void OtevritMovexWorkplace()
+        {
+            SpustitInternetExplorer("http://movex-wp/mwp/");
+        }
+
+        private void OtevritMovexAdmin()
+        {
+            SpustitInternetExplorer("http://movex-apl:6666/");
+        }
+
+        private void SpustitInternetExplorer(string url)
+        {
+            try
+            {
+                Process.Start("iexplore.exe", url);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Nepodarilo sa spustiť Internet Explorer:\n" + ex.Message,
+                                "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            string url = "http://movex-wp/mwp/";
-            var browserForm = new BrowserForm(url);
-            browserForm.Show(); // alebo ShowDialog() pre modálne
+            OtevritMovexWorkplace();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string url = "http://movex-apl:6666/";
-            var browserForm = new BrowserForm(url);
-            browserForm.Show(); // alebo ShowDialog() pre modálne
+            OtevritMovexAdmin();
         }
     }
 }
